@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assam Diaries</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:#f7f9fc;
+}
+
+/* Navbar */
+.navbar {
+    background:#ff6b35;
+    color:white;
+    padding:15px 30px;
+    font-size:22px;
+    font-weight:600;
+}
+
+/* Hero */
+.hero {
+    background:linear-gradient(120deg,#ff6b35,#ffb347);
+    color:white;
+    padding:60px 20px;
+    text-align:center;
+}
+
+.hero h1 {
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.hero p {
+    font-size:18px;
+}
+
+/* Upload Section */
+.upload-box {
+    background:white;
+    margin:30px auto;
+    padding:25px;
+    border-radius:12px;
+    width:90%;
+    max-width:600px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+.upload-box input, .upload-box textarea {
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    border-radius:6px;
+    border:1px solid #ddd;
+}
+
+.upload-box button {
+    background:#ff6b35;
+    color:white;
+    border:none;
+    padding:12px;
+    margin-top:15px;
+    width:100%;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+/* Cards */
+.container {
+    width:90%;
+    margin:30px auto;
+}
+
+.cards {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card {
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width:100%;
+    height:160px;
+    object-fit:cover;
+}
+
+.card-content {
+    padding:15px;
+}
+
+.card-content h3 {
+    margin:0;
+    color:#333;
+}
+
+.card-content p {
+    font-size:14px;
+    color:#666;
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">🌿 Assam Diaries</div>
+
+<section class="hero">
+    <h1>Share Stories of Assam</h1>
+    <p>Upload photos, videos and travel experiences</p>
+</section>
+
+<div class="upload-box">
+    <h3>Create Post</h3>
+    <input type="text" placeholder="Title">
+    <textarea rows="4" placeholder="Write your story..."></textarea>
+    <input type="file">
+    <button>Upload</button>
+</div>
+
+<div class="container">
+    <h2>Trending Stories</h2>
+
+    <div class="cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+            <div class="card-content">
+                <h3>Tea Gardens</h3>
+                <p>Exploring Assam’s beautiful tea estates.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+            <div class="card-content">
+                <h3>Brahmaputra River</h3>
+                <p>Sunset views along the river.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e">
+            <div class="card-content">
+                <h3>Local Culture</h3>
+                <p>Festivals and traditions of Assam.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
